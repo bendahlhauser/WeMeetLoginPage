@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GROUPS } from '../tempGroups';
+import { GROUPS } from '../group';
 
 @Injectable()
 export class GroupsService {

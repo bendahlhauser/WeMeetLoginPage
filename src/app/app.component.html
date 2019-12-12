@@ -40,8 +40,8 @@
                         <span class="group-name">{{group.name}}</span>
                     </li>
                     -->
-                    <li>
-                        <a class="group-list" *ngFor="let g of groups" [routerLink]="['/groups',g.id]">{{g.name}}</a>
+                    <li *ngFor="let g of groups" [routerLink]="['/groups',g.id]">
+                        <a class="group-list" >{{g.name}}</a>
                     </li>
                 </ul>
             </div>

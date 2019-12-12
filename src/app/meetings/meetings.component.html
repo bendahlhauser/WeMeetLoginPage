@@ -1,2 +1,88 @@
+<!--<script src="meetings.component.js"></script>-->
 <h1>Calendar</h1>
 <p>showing when group meeting is for each group. Updates when all members of group give response. Shows group name and time on calendar.</p>
+
+<!--
+<mbsc-form>
+  <div class="mbsc-grid">
+      <div class="mbsc-row">
+          <div class="mbsc-col-sm-12 mbsc-col-md-12">
+              <mbsc-form-group>
+                  <mbsc-form-group-title>Pick Days</mbsc-form-group-title>
+                  <mbsc-calendar [(ngModel)]="multi" [options]="multiSettings"></mbsc-calendar>
+              </mbsc-form-group>
+          </div>
+      </div>
+  </div>
+</mbsc-form>
+
+-->
+
+<form>
+  <button class="leftButton" id="confirm">Confirm</button>
+</form>
+
+
+
+
+
+
+<div class="container">
+    
+  <h3 class="heading" id="currentDate"></h3>
+  <table class="calendarStyle" id="calendar">
+      <thead>
+        <tr class="weekdays">
+    <th>Sun</th>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+        </tr>
+      </thead>
+
+      <tbody id="calendar-body">
+        
+      </tbody>
+
+  </table>
+
+  <div class="buttonStyle">
+      <button class="leftButton" id="prevMonth" onclick="prevMonth()">Previous Month</button>
+      <button class="rightButton" id="nextMonth" onclick="nextMonth()">Next Month</button>
+  </div>
+
+<p id="testing"></p>
+  <br/>
+
+</div>
+
+<script src="meetings.component.js"></script>
+
+<!--<button name="jump" onclick="jump()">Go</button>-->
+
+<!--
+<div class='app'>
+
+      
+        <div class='app-calendar'>
+          <full-calendar
+            #calendar
+            defaultView="dayGridMonth"
+            [header]="{
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+            }"
+            [plugins]="calendarPlugins"
+            [weekends]="calendarWeekends"
+            [events]="calendarEvents"
+            (dateClick)="handleDateClick($event)"
+          ></full-calendar>
+        </div>
+      
+      </div>
+
+      -->

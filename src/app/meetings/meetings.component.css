@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+.container {
+	line-height: 1;
+	margin: 50px;	
+}
+
+.today_color {
+	background-color: #373F51;
+	color: white;
+}
+
+table {
+	border: 3px solid #373F51;
+	/* border-collapse: collapse; */
+	font-family: Verdana, sans-serif;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	border: 1px solid #373F51;
+	font-size: 90%;
+	text-transform: uppercase;
+	border-radius: 10px;
+	background-color: #A9BCD0;
+	color: white;
+}
+
+td {
+	border: 1px solid #373F51;
+	height: 5em;
+	width:5em;
+	padding: 5px;
+	vertical-align: top;
+	border-radius: 5px;
+}
+
+.heading {
+	font-size: 300%;
+	text-align: center;
+	background-color: #A9BCD0;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+tbody td {
+	text-align: right;
+}
+
+.buttonStyle {
+	text-align: center;
+}
+
+.leftButton, .rightButton {
+	display: inline-block;
+	padding: 1em 3em;
+	margin: 15px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+	color: black;
+	text-align: center;
+	width: 40%;
+	border: none;
+}
+
+.leftButton:focus, .rightButton:focus {
+	outline: 0;
+}
+
+.leftButton:hover, .rightButton:hover {
+	color: white;
+	background-color: #373F51;
+}
+
+/*
+h3 {
+    margin: 0 0 10px;
+  }
+  
+  pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+  }
+
+  .cal-day-selected,
+        .cal-day-selected:hover {
+          background-color: deeppink !important;
+        }
+*/

@@ -1,3 +1,4 @@
+﻿import { MbscModule } from '@mobiscroll/angular';
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -18,13 +19,32 @@ import { MeetingsComponent } from './meetings';
 import { CreateGroupComponent } from './creategroup';
 import { GroupsComponent } from './groups/groups.component';
 
+import { FullCalendarModule } from '@fullcalendar/angular';
+
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+
+
+/*
+import { CommonModule } from '@angular/common';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+*/
+
 @NgModule({
-    imports: [
+    imports: [ 
+        MbscModule, 
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
         appRoutingModule,
-        FormsModule
+        FormsModule,
+        FullCalendarModule,
+        //CommonModule,
+        CalendarModule.forRoot({
+            provide: DateAdapter,
+            useFactory: adapterFactory
+          })
     ],
     declarations: [
         AppComponent,

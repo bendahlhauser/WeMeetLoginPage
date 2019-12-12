@@ -36,7 +36,7 @@
     color: white;
     margin-right: .1em;
     border-right: .3em solid rgb(177, 159, 255);
-    background-color: rgb(133, 133, 133);
+    background-color: rgb(201, 201, 201);
   }
   .sidebar-big li.selected {
     color: rgb(75, 95, 105);

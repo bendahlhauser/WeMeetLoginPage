@@ -6,6 +6,7 @@ import { UserService, AuthenticationService } from '../_services';
 
 import { Group } from '../group';
 import { ActivatedRoute } from '@angular/router';
+import { GroupsService } from '../_services/groups.service';
 
 
 @Component({ templateUrl: 'groups.component.html' })
